@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "mensaje",
+						"type": "string"
+					}
+				],
+				"name": "Mensaje_MensajeActualizado",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getMensaje",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "mensaje_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMensajes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "mensaje_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mensaje2_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mensaje",
+						"type": "string"
+					}
+				],
+				"name": "setMensajeCD",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mensaje",
+						"type": "string"
+					}
+				],
+				"name": "setMensajeCD_NoEmit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mensaje",
+						"type": "string"
+					}
+				],
+				"name": "setMensajeM",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mensaje",
+						"type": "string"
+					}
+				],
+				"name": "setMensajeM_NoEmit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "i3arba - 77 Innovation Labs ",
+			"custom:security": "Este es un contrato educativo y no debe ser usado en producción ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Contrato Mensaje ",
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"Mensaje_MensajeActualizado(string)": {
+					"notice": "evento emitido cuando el mensaje es actualizado"
+				}
+			},
+			"kind": "user",
+			"methods": {},
+			"notice": "Este contrato es parte del primer proyecto del Ethereum Developer Pack ",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Mensaje.sol": "Mensaje"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Mensaje.sol": {
+			"keccak256": "0x632021168cc36b11afdb49fa468abbaa165889433baf775359bbd595c097de15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://45e452f812b998e4eab341e5333caf7442853b174f3f9117dbf0e654274108de",
+				"dweb:/ipfs/QmYehFaNzEeBSTsBAMuYvaTGzeHtiY6yLoCYHjKnu3qTU8"
+			]
+		}
+	},
+	"version": 1
+}
