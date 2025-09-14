@@ -20,85 +20,28 @@
 			},
 			{
 				"inputs": [],
-				"name": "getMensaje",
+				"name": "enviarPlatita",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "mensaje_",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "enviado_",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getMensajes",
+				"name": "getUltimoEnvio",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "mensaje_",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "mensaje2_",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_mensaje",
-						"type": "string"
-					}
-				],
-				"name": "setMensajeCD",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_mensaje",
-						"type": "string"
-					}
-				],
-				"name": "setMensajeCD_NoEmit",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_mensaje",
-						"type": "string"
-					}
-				],
-				"name": "setMensajeM",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_mensaje",
-						"type": "string"
-					}
-				],
-				"name": "setMensajeM_NoEmit",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -139,11 +82,19 @@
 	},
 	"sources": {
 		"contracts/Mensaje.sol": {
-			"keccak256": "0x632021168cc36b11afdb49fa468abbaa165889433baf775359bbd595c097de15",
+			"keccak256": "0x5c6c032d1e3b359d6f488376244396c97312fdf185153b4513ddf147353be225",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://45e452f812b998e4eab341e5333caf7442853b174f3f9117dbf0e654274108de",
-				"dweb:/ipfs/QmYehFaNzEeBSTsBAMuYvaTGzeHtiY6yLoCYHjKnu3qTU8"
+				"bzz-raw://44bb2d8c636082d4aa9d3e14b88e4ef08d086f7294929c0c325aa50ec6b93855",
+				"dweb:/ipfs/QmPfUQTUKpMLMtPZD634zUbZ6m1tysvui6wZnF5H3cbkXE"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.7.1/contracts/utils/Strings.sol": {
+			"keccak256": "0xaf159a8b1923ad2a26d516089bceca9bdeaeacd04be50983ea00ba63070f08a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f2cf1c531122bc7ca96b8c8db6a60deae60441e5223065e792553d4849b5638",
+				"dweb:/ipfs/QmPBdJmBBABMDCfyDjCbdxgiqRavgiSL88SYPGibgbPas9"
 			]
 		}
 	},
