@@ -9,10 +9,27 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum ToDoList.Estado",
+								"name": "state",
+								"type": "uint8"
+							}
+						],
 						"indexed": false,
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
+						"internalType": "struct ToDoList.Task",
+						"name": "task",
+						"type": "tuple"
 					},
 					{
 						"indexed": false,
@@ -28,10 +45,27 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum ToDoList.Estado",
+								"name": "state",
+								"type": "uint8"
+							}
+						],
 						"indexed": false,
-						"internalType": "string",
-						"name": "content",
-						"type": "string"
+						"internalType": "struct ToDoList.Task",
+						"name": "task",
+						"type": "tuple"
 					},
 					{
 						"indexed": false,
@@ -48,9 +82,45 @@
 				"inputs": [
 					{
 						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "id",
+						"name": "deleteTime",
 						"type": "uint256"
+					}
+				],
+				"name": "TareaEliminada",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum ToDoList.Estado",
+								"name": "state",
+								"type": "uint8"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct ToDoList.Task",
+						"name": "task",
+						"type": "tuple"
 					},
 					{
 						"indexed": false,
@@ -84,6 +154,19 @@
 					}
 				],
 				"name": "completeTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					}
+				],
+				"name": "deleteTask",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -179,11 +262,11 @@
 	},
 	"sources": {
 		"contracts/ToDoList.sol": {
-			"keccak256": "0xe28d8b32cd61c63b8fc3a22545bf4fefbbd4a6878ae25d68ec7e3cfbc05a3151",
+			"keccak256": "0x47a02fba687b47818d92dd21c6b5acbd8851da027a0b5da0c5eea05f28fb2024",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://07b7c80680f56eedc58cbd8fc6ee498da12a7e2e83fa9f6e4717d8782e2383bc",
-				"dweb:/ipfs/QmRKwArHZiMukeGcV4q6CeyKvch5o2FV3akCU6Ds5PnKC4"
+				"bzz-raw://e88cfc96ebcae3f732ee196e1b585b52fcd3c0c23a5ed2b7372320bf37be71d1",
+				"dweb:/ipfs/QmTxraYD21Q1sFawBuSKY4LeA6dRNxroTSgiKWjiC6oR4d"
 			]
 		}
 	},
