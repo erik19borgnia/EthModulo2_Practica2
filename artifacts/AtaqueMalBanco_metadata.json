@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"name": "SuccessfullAttack",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "victim_",
+						"type": "address"
+					}
+				],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AtaqueMalBanco.sol": "AtaqueMalBanco"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AtaqueMalBanco.sol": {
+			"keccak256": "0x06fd482ded1ed081a36ec7acfc205c5826c45a1db524e8ccbb296525bba018a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d509fcbcb54a64bfa58b8ccec1cb0b37c4470e885c29caef5f1341a766a5fecf",
+				"dweb:/ipfs/QmeinzTEDRfMAoegBuv25x29QSQxecjCZTCXS2sf565dcZ"
+			]
+		},
+		"contracts/MalBanco.sol": {
+			"keccak256": "0xbd7cf3a2364ca8877fca8fd880fe931cfb3abf8e1f7c95238a97d77d23609321",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://709dcd0c214a2d403c46ca7d4e9ec4c1f2ddd4d4b5ba4043bbea334d07c7f1da",
+				"dweb:/ipfs/QmWycwGLDYv9oqUsPj5tVPopReyPV2r9T1P4ExReA6zhk1"
+			]
+		}
+	},
+	"version": 1
+}

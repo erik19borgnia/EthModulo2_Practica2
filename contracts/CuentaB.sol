@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.30;
 
-contract Banco{
+contract CuentaB{
     address public owner;
 
     constructor () {
