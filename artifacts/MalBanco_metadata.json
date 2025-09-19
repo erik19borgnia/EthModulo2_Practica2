@@ -44,6 +44,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ExtractionRequest",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -105,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/MalBanco.sol": {
-			"keccak256": "0xbd7cf3a2364ca8877fca8fd880fe931cfb3abf8e1f7c95238a97d77d23609321",
+			"keccak256": "0xa29ee8d3c30ae775c9bc48a1cb4943860e1f426d7493683de4c31b9e909dbf6b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://709dcd0c214a2d403c46ca7d4e9ec4c1f2ddd4d4b5ba4043bbea334d07c7f1da",
-				"dweb:/ipfs/QmWycwGLDYv9oqUsPj5tVPopReyPV2r9T1P4ExReA6zhk1"
+				"bzz-raw://90c40365ef5dafa9acaa19aac6b0268a6a7254552e628bc18538912939c1451c",
+				"dweb:/ipfs/QmdgoDnN3L92kuQXPg2xgtQyJvQ7S5LgNVsqCqVvSgwfx9"
 			]
 		}
 	},

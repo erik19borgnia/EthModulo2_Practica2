@@ -11,6 +11,31 @@
 					{
 						"indexed": false,
 						"internalType": "bool",
+						"name": "hasBalance",
+						"type": "bool"
+					}
+				],
+				"name": "IterationAttack",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "IterationNotWorked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "IterationWorked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
 						"name": "success",
 						"type": "bool"
 					}
@@ -64,11 +89,11 @@
 	},
 	"sources": {
 		"contracts/AtaqueMalBanco.sol": {
-			"keccak256": "0x06fd482ded1ed081a36ec7acfc205c5826c45a1db524e8ccbb296525bba018a2",
+			"keccak256": "0x64b2ca3705fbdd053da83bbb7d4acf7968dc173a09dd3cdc93e37c852de16a1a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d509fcbcb54a64bfa58b8ccec1cb0b37c4470e885c29caef5f1341a766a5fecf",
-				"dweb:/ipfs/QmeinzTEDRfMAoegBuv25x29QSQxecjCZTCXS2sf565dcZ"
+				"bzz-raw://b6ec8088827e307f34eb87234e1ef8ba446711f80307b04a83c2da799028b32f",
+				"dweb:/ipfs/QmT7JgAkdxif6UUcxHvfh7unfZRjzbZeNgHrr6mtkgjjhP"
 			]
 		},
 		"contracts/MalBanco.sol": {
