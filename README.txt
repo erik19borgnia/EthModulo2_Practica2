@@ -1,28 +1,8 @@
-REMIX DEFAULT WORKSPACE
+Proyecto de ToDo List para el curso de Eth Kipu
+En este proyecto se crea una lista de tareas con un estado (Pendiente, En Proceso, Completada) y una API simple de un ABM para estas.
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Para usar en una IDE, como Remix, clonar el repositorio. Probarlo en la RemixVM.
 
-This workspace contains 3 directories:
-
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
-
-SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+Se hizo un deploy del contrato en la testnet Sepolia, ver aquí:
+Transacción de creación de contrato: https://sepolia.etherscan.io/tx/0x43827ea0e55a44dd4db7d33ff3d9ec91fcb9e60074a74cef61650a1b50030c66
+Enlace del contrato en Etherscan: https://sepolia.etherscan.io/address/0x541438951b1f20da605643baae1e0bf74a1113e8
